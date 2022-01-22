@@ -1,0 +1,420 @@
+*{
+    font-family: Arial;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.nome a{
+    display: flex;
+    align-items: center;
+}
+.itens::after {
+    content: "🟊";
+    color: rgb(197, 197, 25);
+    font-size: 50px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+
+}
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+nav .active a,
+nav a:hover{
+    background-color: #39aae1;
+    color: white;
+}
+#bannerGremio{
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/gremio_everaldo.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    margin-bottom: 50px;
+
+}
+#bannerSelecao{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: right;
+    background-image: url('../images/selecao_everaldo.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+
+} 
+.column{
+    flex-direction: column;
+
+}
+.banner_headlineG{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.banner_headlineG h1{
+    color: rgb(130, 124, 124);
+    font-size: 70px;
+    text-shadow: 3px 0px 5px rgb(111, 118, 140);
+    margin: 0;
+    padding: 0;
+    max-width: 550px;
+}
+.banner_headlineG h2{
+    color: rgb(170, 162, 162);
+    font-size: 15px;
+    text-shadow: 0px 1px 0px rgb(106, 77, 235);
+    margin: 0;
+    padding: 0;
+    max-width: 650px;
+    margin-top: 20px;
+}
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:  flex-end;
+}
+.banner_headline h1{
+    color: rgb(130, 124, 124);
+    font-size: 50px;
+    text-shadow: 3px 0px 5px rgb(111, 118, 140);
+    margin: 0;
+    padding: 0;
+    max-width: 550px;
+}
+
+.banner_headline h2{
+    color: rgb(104, 98, 98);
+    font-size: 35px;
+    text-shadow: 5px 1px 5px rgb(77, 73, 73);
+    margin: 0;
+    padding: 0;
+    max-width: 450px;
+    margin-top: 30px;
+
+}
+.banner_headline li{
+    color: rgb(170, 162, 162);
+    font-size: 19px;
+    text-shadow: 0px 1px 0px rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+    list-style-type: none;
+
+    
+}
+.banner_options{
+    height: 15px;
+    display: flex;
+}
+.banner1,
+.banner2,
+.banner3{
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+.banner1{
+    background-color: #39aae1;
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+
+.banner4,
+.banner5,
+.banner6{
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+.banner4{
+    background-color: RGB(203, 170, 79);
+}
+.banner5{
+    background-color: RGB(16, 89, 29);
+}
+.banner6{
+    background-color: RGB(14, 39, 98);
+}
+
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner_options a {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 13px;
+    text-decoration: none;
+}
+.banner3 .banner_desc{
+    border-bottom: 1px solid rgb(242, 234, 234);
+}
+#geral{
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#geral section{
+    flex: 2;
+    margin-top: 85px;
+
+}
+#geral aside{
+    flex: 1;
+
+}
+.widget_tible{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text{
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+
+}
+.widget_title_bar{
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+
+}
+article a{
+    text-decoration: none;
+}
+article .news_data{
+    display: flex;
+}
+article .news_posted_at{
+    background-color: #2b4c99;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+aside .news_posted_at{
+    background-color: #2b4c99;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 2px;
+    margin-top: 25px;
+}
+article .news_comments{
+    background-color: #39aae1;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+}
+article .news_thumbnail{
+    margin-top: 30px;
+}
+article .news_thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+article .news_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 25px;
+}
+article .resume{
+    color: #5c5c5c;
+    line-height: 19px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+
+}
+.footer_menu{
+    display: flex;
+}
+.footer_menu a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.fm_1, .fm_2, .fm_3{
+    flex: 1;
+    color: white;
+}
+.fm_1{
+    background-color: #39aae1;
+}
+.fm_2{
+    background-color: #0079c7;
+}
+.fm_3{
+    background-color: #2b4c99;
+}
+.footer_area{
+    display: flex;
+}
+.footer_areaitem{
+    flex: 1;
+    color: white;
+    font-size: 15px;
+
+}
+.flexColumn {
+    flex-direction: column;
+}
+footer .widget_title_text{
+    color: white;
+    padding: 10px;
+}
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line{
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media (max-width:600px) {
+    .banner_headline{
+        padding: 20px;
+    }
+    .banner_headline h1{
+        font-size: 55px;   
+    }
+    .banner_headline h2{
+        font-size: 17px;
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    .footer_menu{
+        flex-direction: column;
+    }
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_copy{
+        padding-left: 20px;
+    }
+    .widget_title{
+        flex-direction: column;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    header{
+        height: auto;
+    }
+    .nome{
+        padding: 20px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+.accordion{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #686767;
+}
+.widget_body{
+    margin-top: 50px;
+}
+.cont{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #686767;
+}
